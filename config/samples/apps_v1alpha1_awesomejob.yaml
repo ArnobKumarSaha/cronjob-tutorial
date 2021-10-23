@@ -1,0 +1,7 @@
+apiVersion: apps.tutorial.io/v1alpha1
+kind: AwesomeJob
+metadata:
+  name: awesomejob-sample
+spec:
+  # Add fields here
+  foo: bar

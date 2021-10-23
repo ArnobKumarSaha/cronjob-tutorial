@@ -1,0 +1,20 @@
+# permissions for end users to view awesomejobs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: awesomejob-viewer-role
+rules:
+- apiGroups:
+  - apps.tutorial.io
+  resources:
+  - awesomejobs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - apps.tutorial.io
+  resources:
+  - awesomejobs/status
+  verbs:
+  - get
