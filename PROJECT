@@ -23,4 +23,12 @@ resources:
   kind: AwesomeJob
   path: tutorial.io/learn/apis/apps/v1alpha1
   version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: tutorial.io
+  group: batch
+  kind: NiceJob
+  path: tutorial.io/learn/apis/batch/v2
+  version: v2
 version: "3"

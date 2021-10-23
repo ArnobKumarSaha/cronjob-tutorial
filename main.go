@@ -33,6 +33,7 @@ import (
 
 	appsv1alpha1 "tutorial.io/learn/apis/apps/v1alpha1"
 	batchv1 "tutorial.io/learn/apis/batch/v1"
+	batchv2 "tutorial.io/learn/apis/batch/v2"
 	appscontrollers "tutorial.io/learn/controllers/apps"
 	batchcontrollers "tutorial.io/learn/controllers/batch"
 	//+kubebuilder:scaffold:imports
@@ -48,6 +49,7 @@ func init() {
 
 	utilruntime.Must(batchv1.AddToScheme(scheme))
 	utilruntime.Must(appsv1alpha1.AddToScheme(scheme))
+	utilruntime.Must(batchv2.AddToScheme(scheme))
 	//+kubebuilder:scaffold:scheme
 }
 
