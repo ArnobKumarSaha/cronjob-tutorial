@@ -1,6 +1,7 @@
 domain: tutorial.io
 layout:
 - go.kubebuilder.io/v3
+multigroup: true
 projectName: cronjob
 repo: tutorial.io/learn
 version: "3"
