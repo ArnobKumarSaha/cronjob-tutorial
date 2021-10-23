@@ -4,4 +4,14 @@ layout:
 multigroup: true
 projectName: cronjob
 repo: tutorial.io/learn
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: tutorial.io
+  group: batch
+  kind: NiceJob
+  path: tutorial.io/learn/apis/batch/v1
+  version: v1
 version: "3"
