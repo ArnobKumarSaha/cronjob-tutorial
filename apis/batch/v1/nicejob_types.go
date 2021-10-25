@@ -105,6 +105,7 @@ type NiceJobStatus struct {
 
 //+kubebuilder:object:root=true
 //+kubebuilder:subresource:status
+//+kubebuilder:storageversion
 
 // NiceJob is the Schema for the nicejobs API
 type NiceJob struct {
